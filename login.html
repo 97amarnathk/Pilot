@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pilot</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<body class="homepage">
+  <div class="main">
+
+    <h1 class="logo">Pilot</h1>
+
+    <p class="tagline">A simple chat application</p>
+
+    <button id="sign_in_button" class="button">
+      Sign in with Google
+    </button>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+  <script>
+  // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyAZ10fqW9w1fket0q38ZzTUOfONWQN9gTE",
+      authDomain: "pilot-bd1cf.firebaseapp.com",
+      databaseURL: "https://pilot-bd1cf.firebaseio.com",
+      projectId: "pilot-bd1cf",
+      storageBucket: "pilot-bd1cf.appspot.com",
+      messagingSenderId: "359493310073"
+    };
+    firebase.initializeApp(config);
+  </script>
+  <script type="text/javascript" src="functions.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+</body>
+</html>

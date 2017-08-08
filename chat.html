@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pilot</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="member_area">
+    <div class="user_info">
+      <img id="user_image"/>
+      <span id="username"></span>
+      <span class="logout" id="logout_button">Log out</span>
+    </div>
+
+    <div class="members" id="members">
+    </div>
+  </div>
+
+  <div class="message_area">
+    <div id="chat_info" class="chat_info">
+    </div>
+
+    <div class="messages" id="messages">
+      <h2 class="empty_state">No chat selected</h2>
+    </div>
+
+    <div class="chat_form" id="chat_form">
+      <input id="message_text" type="text" class="chat_message" placeholder="Write your message and press Enter..."/>
+      <button id="send_button" class="button send_button">Send</button>
+    </div>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+  <script>
+  // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyAZ10fqW9w1fket0q38ZzTUOfONWQN9gTE",
+      authDomain: "pilot-bd1cf.firebaseapp.com",
+      databaseURL: "https://pilot-bd1cf.firebaseio.com",
+      projectId: "pilot-bd1cf",
+      storageBucket: "pilot-bd1cf.appspot.com",
+      messagingSenderId: "359493310073"
+    };
+    firebase.initializeApp(config);
+  </script>
+  <script type="text/javascript" src="functions.js"></script>
+  <script type="text/javascript" src="chat.js"></script>
+</body>
+</html>
